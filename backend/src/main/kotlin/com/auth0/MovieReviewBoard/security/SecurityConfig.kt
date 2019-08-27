@@ -17,7 +17,9 @@ class SecurityConfig : ResourceServerConfigurerAdapter() {
     @Throws(Exception::class)
     override fun configure(http: HttpSecurity) {
         http.authorizeRequests()
-                .mvcMatchers("/graphql").authenticated()
+		        .mvcMatchers("/gui").permitAll()
+                .mvcMatchers("/graphql").permitAll()
+                // .mvcMatchers("/graphql").authenticated()
                 .anyRequest().permitAll()
     }
 

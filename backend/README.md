@@ -17,6 +17,60 @@
 
 ## Testing the application
 
-* Visit `http://localhost:8888/graphql` to access the GraphQL server.
-* In order to issue queries to the API visit `http://localhost:8888/graphiql` to send 
-your queries.
+* Visit http://localhost:8888/graphql to access the GraphQL server.
+
+## Query
+
+* In order to issue queries to the API visit http://localhost:8888/graphiql to send your queries.
+<!-- * Or use GraphQL Playground visit http://localhost:8888/gui -->
+
+### Example Query
+
+see schema in [src/main/resources/graphql](src/main/resources/graphql)
+
+#### findAllMovies
+
+```graphql
+query {
+  findAllMovies {
+    id
+    title
+    rating
+    director {
+      firstName
+      lastName
+    }
+  }
+}
+```
+
+#### countMovies
+
+```graphql
+query {
+	countMovies
+}
+```
+
+#### findAllDirectors
+
+```graphql
+query {
+  findAllDirectors {
+    id
+    firstName
+    lastName
+  }
+}
+
+```
+
+### findMoviesByDirector
+```graphql
+query {
+  findMoviesByDirector (directorId: 1) {
+    id
+    title
+  }
+}
+```
