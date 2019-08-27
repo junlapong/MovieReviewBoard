@@ -1,4 +1,10 @@
-# MovieReviewBoard
+# Movie Review Board
+
+Source of article **Vue.js, Spring Boot, Kotlin, and GraphQL: Building Modern Apps** -
+[Part 1](https://auth0.com/blog/vuejs-spring-boot-kotlin-and-graphql-building-modern-apps-part-1/),
+[Part 2](https://auth0.com/blog/vuejs-spring-boot-kotlin-and-graphql-building-modern-apps-part-2/)
+
+see [Outline](outline.md)
 
 # App Setup
 
@@ -7,4 +13,4 @@
 
 # Testing 
 
-* If you ran the frontend app, your app should be available at `http://localhost:8080`
+* If you ran the frontend app, your app should be available at http://localhost:8080
